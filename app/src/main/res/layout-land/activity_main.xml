@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gebruiker.schoolquiz.MainActivity">
+
+    <ImageView
+        android:id="@+id/animalImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vlinder4" />
+
+    <!--- vraag 1 -->
+
+    <TextView
+        android:id="@+id/vraag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1: Wat voor soort dier is een toekan?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vraag1"
+        android:onClick="Button1_1"
+        android:text="Reptiel" />
+
+
+    <Button
+        android:id="@+id/btn1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1_1"
+        android:onClick="Button1_2"
+        android:text="Vogel" />
+
+
+    <Button
+        android:id="@+id/btn1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1_2"
+        android:onClick="Button1_3"
+        android:text="Insect" />
+
+    <!--- vraag 2 -->
+
+    <TextView
+        android:id="@+id/vraag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1_3"
+        android:text="2: Hoe oud worden Pinguïns gemiddeld?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vraag2"
+        android:onClick="Button2_1"
+        android:text="15-20 jaar" />
+
+    <Button
+        android:id="@+id/btn2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2_1"
+        android:onClick="Button2_2"
+        android:text="5-10 jaar" />
+
+    <Button
+        android:id="@+id/btn2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2_2"
+        android:onClick="Button2_3"
+        android:text="20-30 jaar" />
+
+
+    <!--- vraag 3 -->
+
+    <TextView
+        android:id="@+id/vraag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2_3"
+        android:text="3: Is de tijger een bedreigde diersoort?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vraag3"
+        android:onClick="Button3_1"
+        android:text="Ja" />
+
+    <Button
+        android:id="@+id/btn3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3_1"
+        android:onClick="Button3_2"
+        android:text="Nee" />
+
+    <!--- nakijkbutton & reset button -->
+
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="resetbtn"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/nakijkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/resetbutton"
+        android:onClick="nakijkbtn"
+        android:text="Nakijken" />
+
+
+    <TextView
+        android:id="@+id/antwoordt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:rotation="180"
+        android:text="1: Vogel"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/antwoordt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/antwoordt1"
+        android:layout_alignParentRight="true"
+        android:rotation="180"
+        android:text="2: 15-20 jaar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/antwoordt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/antwoordt2"
+        android:layout_alignParentRight="true"
+        android:rotation="180"
+        android:text="3: Ja"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
